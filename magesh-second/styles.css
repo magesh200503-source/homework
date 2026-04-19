@@ -1,0 +1,12 @@
+p, h1, h2, img, video, ul, li {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+h1 {
+    font-size: 50px
+}
+h2 {
+    font-size: 35px;
+}
