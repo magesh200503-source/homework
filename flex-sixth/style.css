@@ -1,0 +1,32 @@
+html{
+    font-family: sans-serif;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+.header{
+    width: 1650px;
+    height: 80px;
+    margin: 0 auto;
+    border-bottom: 2px solid #bbb;
+    width: 100%;
+}
+.flex-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.article{
+    padding: 14px;
+}
+.header-link{
+    padding: 5px;
+    color: #000;
+}
+.flex-main{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
