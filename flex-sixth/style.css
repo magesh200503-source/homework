@@ -12,11 +12,13 @@ body * {
     margin: 0 auto;
     border-bottom: 2px solid #bbb;
     width: 100%;
+    height: 100%;
 }
 .flex-header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 .article{
     padding: 14px;
@@ -25,8 +27,11 @@ body * {
     padding: 5px;
     color: #000;
 }
-.flex-main{
+.flex-main-words{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+}
+.number{
+    text-decoration: none;
 }
