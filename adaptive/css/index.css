@@ -117,7 +117,7 @@
     display: inline-block;
     width: 22px;
     height: 9px;
-    background-image: url("../images/arrow-icon.svg");
+    background-image: url("../images/arrow-right-icon.svg");
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s;
