@@ -126,7 +126,7 @@ button.hero__button:disabled {
 }
 
 a:focus-visible,
-hero__button:focus-visible,
+button:focus-visible,
 summary:focus-visible {
     outline: 2px solid #3596ed;
     outline-offset: 2px;
