@@ -127,7 +127,7 @@ body.overflow {
 
 .sidebar__button.active , .sidebar__button:hover {
     width: 100%;
-    background-color: #DAF765;
+    background-color: #daf765;
 }
 
 
@@ -166,10 +166,17 @@ body.overflow {
 .content__list-item:hover,.content__list-diplom:hover {
     background-color: #AFB1A7;
 }
-.item-color:hover{
-    background-color: #8fbc8f;
-    font-size: 18px;
+.content__list-item:hover:nth-child(1){
+    animation: rubber .6s;
 }
+.content__list-item:hover:nth-child(15) {
+    animation: glitch .15s infinite;
+}
+.item-color:hover{
+    background-color: #daf765;
+}   
+}
+
 li a {
     padding: 12px 18px;
 
@@ -292,4 +299,19 @@ li a {
     .sidebar__user {
         margin-left: 0;
     }
+}
+@keyframes rubber {
+    0%   { transform: scale(1); }
+    30%  { transform: scaleX(1.3) scaleY(0.7); }
+    50%  { transform: scaleX(0.8) scaleY(1.2); }
+    70%  { transform: scaleX(1.15) scaleY(0.9); }
+    100% { transform: scale(1); }
+}
+@keyframes glitch {
+    0%   { transform: translate(0); }
+    20%  { transform: translate(-3px, 2px); }
+    40%  { transform: translate(3px, -2px); }
+    60%  { transform: translate(-2px, -3px); }
+    80%  { transform: translate(2px, 3px); }
+    100% { transform: translate(0); }
 }
