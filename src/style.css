@@ -165,17 +165,7 @@ body.overflow {
 
 .content__list-item:hover,.content__list-diplom:hover {
     background-color: #AFB1A7;
-}
-.content__list-item:hover:nth-child(1){
-    animation: rubber .6s;
-}
-.content__list-item:hover:nth-child(15) {
-    animation: glitch .15s infinite;
-}
-.item-color:hover{
-    background-color: #daf765;
-}   
-}
+ }
 
 li a {
     padding: 12px 18px;
