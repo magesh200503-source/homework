@@ -227,9 +227,9 @@
 }
 
 @media (width <= 420px) {
-    .product__buy-button{
+    .product__buy-button {
         width: 100%;
-    }    
+    }
 }
 
 @media (any-hover: hover) {
@@ -246,17 +246,19 @@
     line-height: 130%;
     color: var(--main-color);
     padding-bottom: 5px;
-    transition: color var(--transition-delay), border-color var(--transition-delay);
+    transition:
+        color var(--transition-delay),
+        border-color var(--transition-delay);
 }
-@media (any-hover: hover){
-    .product__sizes-link:hover{
+@media (any-hover: hover) {
+    .product__sizes-link:hover {
         border-color: var(--accent-color);
         color: var(--accent-color);
     }
 }
 
 @media (width <= 420px) {
-    .product__cart-button{
+    .product__cart-button {
         flex-shrink: 0;
-    }    
+    }
 }

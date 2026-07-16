@@ -1,0 +1,111 @@
+.characteristics__video {
+    position: relative;
+}
+
+@media (width <= 576px) {
+    .characteristics__video {
+        margin-bottom: 40px;
+    }
+}
+
+@media (width > 576px) {
+    .characteristics__video {
+        margin-bottom: 60px;
+    }
+}
+
+.characteristics-image {
+    border: 1px solid var(--main-color);
+    border-radius: 12px;
+    overflow: hidden;
+}
+.characteristics-play-link {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background-color: var(--overlay-color);
+    border: 1px solid var(--main-color);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow:
+        var(--shadow-glow),
+        inset var(--shadow-glow);
+    transition:
+        box-shadow var(--transition-delay),
+        border-color var(--transition-delay);
+}
+
+.characteristics-play-icon {
+    transform: translateX(2px);
+}
+
+@media (any-hover: hover) {
+    .characteristics-play-link:hover {
+        box-shadow:
+            var(--shadow-accent-glow),
+            inset var(--shadow-accent-glow);
+        border-color: var(--accent-color);
+    }
+}
+
+@media (width <= 576px) {
+    .characteristics-play-link {
+        width: 48px;
+        height: 48px;
+    }
+    .characteristics-play-icon {
+        width: 10px;
+        height: 13px;
+        transform: translateX(1px);
+    }
+}
+@media (width > 576px) {
+    .characteristics-play-link {
+        width: 80px;
+        height: 80px;
+    }
+    .characteristics-play-icon {
+        width: 17px;
+        height: 24px;
+        transform: translateX(2px);
+    }
+}
+.characteristics__card-icon{
+    margin-bottom: 4px;
+    transform: translateX(-8px);
+    overflow: visible;
+}
+
+.characteristics__list:nth-child(2).characteristics__card-icon{
+    margin-bottom: 40px;
+}
+
+.characteristics__article-title {
+    margin-bottom: 20px;
+}
+
+.characteristics__article-title {
+    font-size: 18px;
+}
+.characteristics__list{
+    display: grid;  
+    grid-template-columns: repeat(auto-fit, minmax(345px, 1fr));
+    gap: 40px 20px;
+}
+@media (width <= 576px){
+    .characteristics__card-icon{
+        width: 48px;
+        height: 48px;
+    }
+}
+@media (width > 576px){
+    .characteristics__card-icon{
+        width: 56px;
+        height: 56px;
+    }
+}

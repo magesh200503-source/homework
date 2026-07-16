@@ -12,12 +12,14 @@
     --disable-color: #5d5d56;
     --disable-glow-color: #5d5d564d;
     --shadow-color: #181817;
+    --overlay-color: #2a2a2980;
 
     /* shadows */
     --shadow-glow: 0 0 6px 2px var(--main-glow-color);
     --shadow-accent-glow: 0 0 6px 2px var(--accent-glow-color);
     --shadow-disable-glow: 0 0 6px 2px var(--disable-glow-color);
 
+    --shadow-accent-top-models-glow: 0 0 30px 4px var(--accent-glow-color);
     /* container */
     --container-width: 1240px;
     --container-padding: 15px;

@@ -38,11 +38,15 @@ img {
 .text-regular {
     font-weight: 400;
 }
+.title-xs,
 .title-sm,
 .title-md{
     font-weight: 600;
     text-transform: uppercase;
     color: var(--main-color);
+}
+.title-xs{
+    font-size: 18px;
 }
 .title-md {
     /* min-width 375px, max-width 992px */
@@ -58,7 +62,7 @@ img {
     .section {
         padding-bottom: 140px;
     }
-    .section__title{
+    .section-title{
         margin-bottom: 40px;
     }
 }
@@ -66,7 +70,7 @@ img {
     .section {
         padding-bottom: 80px;
     }
-    .section__title{
+    .section-title{
         margin-bottom: 30px;
     }
 }
