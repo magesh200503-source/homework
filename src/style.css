@@ -166,7 +166,7 @@ body.overflow {
 .content__list-item:hover,.content__list-diplom:hover {
     background-color: #AFB1A7;
  }
-.content__list-item::nthchild(18):hover{
+.content__list-last-item:hover{
     color: #255784;
     background: #2196f3;
     box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
