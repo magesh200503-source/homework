@@ -42,14 +42,16 @@ if (weight <= 0 || isNaN(weight)) {
     const price = weight < 1 ? 5 : weight >= 1 && weight <= 5 ? 10 : 15;
     const type = prompt("Тип доставки");
     if (type == "Стандарт" || type == "стандарт") {
-        alert(`Стоимость посылки ${price}$`)
+        const finalPrice = price
+        alert(`Стоимость посылки ${finalPrice}$`)
     } else if (type == "Экспресс" || type == "экспресс"){
-        alert(`Стоимость посылки ${price * 1.5}$`)
+        const finalPrice = price * 1.5
+        alert(`Стоимость посылки ${finalPrice}$`)
     } else if (type == "Премиум" || type == "премиум"){
-        alert(`Стоимость посылки ${price * 2}$`)
+        const finalPrice = price * 2
+        alert(`Стоимость посылки ${finalPrice}$`)
     } else {
         alert('Неверный тип доставки')
     }
 }
 
-/* const price = weight < 1 ? 5 : weight >= 1 && weight <= 5 ? 10 : 15; */
