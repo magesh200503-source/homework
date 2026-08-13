@@ -26,18 +26,17 @@ console.log(checkAccess('admin', 123456))
 // "Вечер" (с 18 до 23 часов).
 // Если введённое значение не попадает в этот диапазон, возвращайте `"Некорректное время"`.
 function getTimeOfDay(time) {
-    return time > 0 && time <= 5 ? "Ночь" : time <= 11 ? "Утро" : time <= 17 ? "День" : time <= 23 ? "Вечер" : "Некорректное время"; 
+    return time >= 0 && time <= 23 ? time <= 5 ? "Ночь" : time <= 11 ? "Утро" : time <= 17 ? "День" : "Вечер" : "Некорректное время"; 
 }
-const getTimeOfDay_Arrow = time => time > 0 && time <= 5 ? "Ночь" : time <= 11 ? "Утро" : time <= 17 ? "День" : time <= 23 ? "Вечер" : "Некорректное время";
-console.log(getTimeOfDay_Arrow(16))
-console.log(getTimeOfDay(16))
+const getTimeOfDay_Arrow = time => time >= 0 && time <= 23 ? time <= 5 ? "Ночь" : time <= 11 ? "Утро" : time <= 17 ? "День" : "Вечер" : "Некорректное время";
+console.log(getTimeOfDay_Arrow(6))
 // Задача 4.
 // Напишите функцию findFirstEven, которая принимает два числа start и end и находит первое чётное число в указанном диапазоне.
 // Если чётного числа в этом диапазоне нет, функция должна вернуть "Чётных чисел нет".
 function findFirstEven(start, end){
-  return start % 2 == 0 ? start : start != end ? start + 1 : "Чётных чисел нет";
+  return start % 2 == 0 ? start : start < end ? start + 1 : start > end ? start - 1 :"Чётных чисел нет";
 }
-console.log(findFirstEven(9,10))
+console.log(findFirstEven(11,11))
 // Пример работы:
 // console.log(findFirstEven(1, 10)); // 2
 // console.log(findFirstEven(9, 9)); // "Чётных чисел нет"
