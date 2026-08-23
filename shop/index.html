@@ -1,0 +1,827 @@
+<!doctype html>
+<html lang="ru" class="page">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/index.css" />
+        <link
+            rel="shortcut icon"
+            href="icons/nike-favicon-48x48.ico"
+            type="image/x-icon"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+        />
+        <script
+            src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"
+            defer
+        ></script>
+        <script type="module" src="js/index.js"></script>
+        <script type="module" src="js/fslightbox.js"></script>
+        <title>Shop.co</title>
+    </head>
+    <body class="page__body">
+        <header class="header">
+            <div class="announcement">
+                <div class="container announcement__container">
+                    <p class="announcement__text announcement__text--disabled">
+                        Зарегистрируйтесь и получите скидку 20% на первую
+                        покупку.
+                    </p>
+                    <a href="#" class="announcement__link">
+                        Зарегистрироваться сейчас
+                    </a>
+
+                    <button
+                        class="announcement__close"
+                        aria-label="Закрыть"
+                        title="Закрыть"
+                    >
+                        <svg width="20" height="20">
+                            <use
+                                class="header__actions-icon"
+                                href="./icons/sprite.svg#cross"
+                            ></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="container header__container">
+                <button class="header__burger burger">
+                    <svg width="24" height="24" class="header__burger-svg">
+                        <use
+                            class="burger__icon-burger"
+                            href="./icons/sprite.svg#burger"
+                        ></use>
+                        <use
+                            class="burger__icon-cross"
+                            href="./icons/sprite.svg#cross"
+                        ></use>
+                    </svg>
+                </button>
+                <a href="#" class="header__logo-title">SHOP.CO</a>
+                <nav class="header__menu menu" id="header__menu">
+                    <ul class="menu__list">
+                        <li class="menu-item">
+                            <a href="#" class="menu__link"
+                                >Магазин
+                                <svg width="16" height="16">
+                                    <use
+                                        class="header__actions-icon"
+                                        href="./icons/sprite.svg#arrow-down"
+                                    ></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="menu__link">Скидки</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="menu__link">Новые поступления</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="menu__link">Бренды</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__controls">
+                    <form class="header__search">
+                        <svg width="24" height="24" class="header__search-svg">
+                            <use
+                                class="header__actions-icon"
+                                href="./icons/sprite.svg#search"
+                            ></use>
+                        </svg>
+                        <input
+                            name="Искать товары"
+                            class="header__search-input"
+                            type="text"
+                            placeholder="Искать товары..."
+                        />
+                    </form>
+                    <div class="header__actions">
+                        <button
+                            class="header__actions-button"
+                            title="Корзина"
+                            aria-label="Корзина"
+                        >
+                            <svg width="24" height="24">
+                                <use
+                                    class="header__actions-icon"
+                                    href="./icons/sprite.svg#cart"
+                                ></use>
+                            </svg>
+                        </button>
+                        <button
+                            class="header__actions-button"
+                            title="Корзина"
+                            aria-label="Корзина"
+                        >
+                            <svg width="24" height="24">
+                                <use
+                                    class="header__actions-icon"
+                                    href="./icons/sprite.svg#profile"
+                                ></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <section class="hero">
+                <div class="container hero__container">
+                    <div class="hero__info">
+                        <h1 class="hero__title">
+                            НАЙДИ ОДЕЖДУ КОТОРАЯ ВЫРАЗИТ ТВОЙ СТИЛЬ
+                        </h1>
+                        <p class="hero__text text-regular">
+                            Просмотрите наш набор тщательно сделанной одежды,
+                            созданный чтобы подчеркнуть ваш индивидуальный
+                            стиль.
+                        </p>
+                        <button class="hero__button">Купить сейчас</button>
+                        <div class="hero__stats">
+                            <div class="hero__stats-item">
+                                <h3 class="hero__stats-title">200+</h3>
+                                <p class="hero__stats-text text-regular">
+                                    Всемирных брендов
+                                </p>
+                            </div>
+                            <div class="hero__stats-item hero__border-item">
+                                <h3 class="hero__stats-title">2,000+</h3>
+                                <p class="hero__stats-text text-regular">
+                                    Качественных товаров
+                                </p>
+                            </div>
+                            <div class="hero__stats-item">
+                                <h3 class="hero__stats-title">30,000+</h3>
+                                <p class="hero__stats-text text-regular">
+                                    Счастливых клиентов
+                                </p>
+                            </div>
+                        </div>
+                        <div class="hero__picture"></div>
+                    </div>
+                    <div class="hero__media">
+                        <picture>
+                            <source
+                                srcset="./images/hero-image.webp"
+                                type="image/webp"
+                            />
+                            <img
+                                width="626"
+                                height="663"
+                                src="./images/hero-image.png"
+                                alt="Парень и девушка в одежде"
+                                class="hero__image"
+                            />
+                        </picture>
+                        <svg class="hero__star-decor--small">
+                            <use
+                                width="56"
+                                height="56"
+                                href="./icons/progectiles-sprite.svg#small"
+                            ></use>
+                        </svg>
+                        <svg class="hero__star-decor--large">
+                            <use
+                                width="104"
+                                height="104"
+                                href="./icons/progectiles-sprite.svg#large"
+                            ></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="hero__brands">
+                    <div class="container hero__brands-container">
+                        <svg
+                            class="hero__brand-logo hero__brand-logo--versace"
+                            width="167"
+                            height="34"
+                            aria-label="Versace"
+                        >
+                            <use href="./icons/logo-sprite.svg#versace"></use>
+                        </svg>
+                        <svg
+                            class="hero__brand-logo hero__brand-logo--zara"
+                            width="91"
+                            height="38"
+                            aria-label="Zara"
+                        >
+                            <use href="./icons/logo-sprite.svg#zara"></use>
+                        </svg>
+                        <svg
+                            class="hero__brand-logo hero__brand-logo--gucci"
+                            width="156"
+                            height="36"
+                            aria-label="Gucci"
+                        >
+                            <use href="./icons/logo-sprite.svg#gucci"></use>
+                        </svg>
+                        <svg
+                            class="hero__brand-logo hero__brand-logo--prada"
+                            width="194"
+                            height="32"
+                            aria-label="Prada"
+                        >
+                            <use href="./icons/logo-sprite.svg#prada"></use>
+                        </svg>
+                        <svg
+                            class="hero__brand-logo hero__brand-logo--calvin"
+                            width="207"
+                            height="34"
+                            aria-label="Calvin Klein"
+                        >
+                            <use
+                                href="./icons/logo-sprite.svg#calvin-clein"
+                            ></use>
+                        </svg>
+                    </div>
+                </div>
+            </section>
+            <section class="products products--new-arrivals">
+                <div class="container products__container">
+                    <h2 class="products__title">НОВЫЕ ПОСТУПЛЕНИЯ</h2>
+                    <div class="product__grid">
+                        <article class="product__card">
+                            <picture>
+                                <source
+                                    srcset="
+                                        ./images/arrival-images/receipts-image-1.webp
+                                    "
+                                    type="image/webp"
+                                />
+                                <img
+                                    class="product__image"
+                                    width="295"
+                                    height="298"
+                                    src="./images/arrival-images/receipts-image-1.jpg"
+                                    alt="Серая футболка от 'Outfitters', с лентой на рукавах, и надписью 'NEW RULES'"
+                                />
+                            </picture>
+                            <footer class="product__footer">
+                                <h3 class="product__title">
+                                    Футболка с лентой
+                                </h3>
+                                <div class="product__rating">
+                                    <div class="product__rating-stars">
+                                        <svg
+                                            class="product__star"
+                                            width="18"
+                                            height="17"
+                                        >
+                                            <use
+                                                href="./icons/main-sprite.svg#star"
+                                            ></use>
+                                        </svg>
+                                        <svg
+                                            class="product__star"
+                                            width="18"
+                                            height="17"
+                                        >
+                                            <use
+                                                href="./icons/main-sprite.svg#star"
+                                            ></use>
+                                        </svg>
+                                        <svg
+                                            class="product__star"
+                                            width="18"
+                                            height="17"
+                                        >
+                                            <use
+                                                href="./icons/main-sprite.svg#star"
+                                            ></use>
+                                        </svg>
+                                        <svg
+                                            class="product__star"
+                                            width="18"
+                                            height="17"
+                                        >
+                                            <use
+                                                href="./icons/main-sprite.svg#star"
+                                            ></use>
+                                        </svg>
+                                        <svg
+                                            class="product__star-half article-star--half"
+                                            width="9"
+                                            height="17"
+                                        >
+                                            <use
+                                                href="./icons/main-sprite.svg#star-half"
+                                            ></use>
+                                        </svg>
+                                    </div>
+                                    <p class="product__rating-text">4.5/5</p>
+                                </div>
+                                <p class="product__price">₽7000</p>
+                            </footer>
+                        </article>
+                        <article class="product__card">
+                            <picture>
+                                <source
+                                    srcset="
+                                        ./images/arrival-images/receipts-image-2.webp
+                                    "
+                                    type="image/webp"
+                                />
+                                <img
+                                    class="product__image"
+                                    width="295"
+                                    height="298"
+                                    src="./images/arrival-images/receipts-image-2.jpg"
+                                    alt="Узкие, синие джинсы"
+                                />
+                            </picture>
+                            <footer class="product__footer">
+                                <h3 class="product__title">Узкие джинсы</h3>
+                                <div class="product__rating">
+                                    <div class="product__rating-stars">
+                                        <svg
+                                            class="product__star"
+                                            width="18"
+                                            height="17"
+                                        >
+                                            <use
+                                                href="./icons/main-sprite.svg#star"
+                                            ></use>
+                                        </svg>
+                                        <svg
+                                            class="product__star"
+                                            width="18"
+                                            height="17"
+                                        >
+                                            <use
+                                                href="./icons/main-sprite.svg#star"
+                                            ></use>
+                                        </svg>
+                                        <svg
+                                            class="product__star"
+                                            width="18"
+                                            height="17"
+                                        >
+                                            <use
+                                                href="./icons/main-sprite.svg#star"
+                                            ></use>
+                                        </svg>
+                                        <svg
+                                            class="product__star-half article-star--half"
+                                            width="9"
+                                            height="17"
+                                        >
+                                            <use
+                                                href="./icons/main-sprite.svg#star-half"
+                                            ></use>
+                                        </svg>
+                                    </div>
+                                    <p class="product__rating-text">3.5/5</p>
+                                </div>
+                                <div class="product__price-wrapper">
+                                    <p class="product__price">₽5000</p>
+                                    <p class="product__old-price">₽6000</p>
+                                    <p class="product__price-discount">-20%</p>
+                                </div>
+                            </footer>
+                        </article>
+                        <article class="product__card">
+                            <picture>
+                                <source
+                                    srcset="
+                                        ./images/arrival-images/receipts-image-3.webp
+                                    "
+                                    type="image/webp"
+                                />
+                                <img
+                                    class="product__image"
+                                    width="295"
+                                    height="298"
+                                    src="./images/arrival-images/receipts-image-3.jpg"
+                                    alt="Клетчатая рубашка, с красными и синими клетками"
+                                />
+                            </picture>
+                            <footer class="product__footer">
+                                <h3 class="product__title">
+                                    Клетчатая рубашка
+                                </h3>
+                                <div class="product__rating">
+                                    <div class="product__rating-stars">
+                                        <svg
+                                            class="product__star"
+                                            width="18"
+                                            height="17"
+                                        >
+                                            <use
+                                                href="./icons/main-sprite.svg#star"
+                                            ></use>
+                                        </svg>
+                                        <svg
+                                            class="product__star"
+                                            width="18"
+                                            height="17"
+                                        >
+                                            <use
+                                                href="./icons/main-sprite.svg#star"
+                                            ></use>
+                                        </svg>
+                                        <svg
+                                            class="product__star"
+                                            width="18"
+                                            height="17"
+                                        >
+                                            <use
+                                                href="./icons/main-sprite.svg#star"
+                                            ></use>
+                                        </svg>
+                                        <svg
+                                            class="product__star"
+                                            width="18"
+                                            height="17"
+                                        >
+                                            <use
+                                                href="./icons/main-sprite.svg#star"
+                                            ></use>
+                                        </svg>
+                                        <svg
+                                            class="product__star-half article-star--half"
+                                            width="9"
+                                            height="17"
+                                        >
+                                            <use
+                                                href="./icons/main-sprite.svg#star-half"
+                                            ></use>
+                                        </svg>
+                                    </div>
+                                    <p class="product__rating-text">4.5/5</p>
+                                </div>
+                                <p class="product__price">₽7000</p>
+                            </footer>
+                        </article>
+                        <article class="product__card">
+                            <picture>
+                                <source
+                                    srcset="
+                                        ./images/arrival-images/receipts-image-4.webp
+                                    "
+                                    type="image/webp"
+                                />
+                                <img
+                                    class="product__image"
+                                    width="295"
+                                    height="298"
+                                    src="./images/arrival-images/receipts-image-4.jpg"
+                                    alt="Футболка с оранжевым торсом, черными рукавами и черными, вертикальными полосами"
+                                />
+                            </picture>
+                            <footer class="product__footer">
+                                <h3 class="product__title">
+                                    Футболка с полосами
+                                </h3>
+                                <div class="product__rating">
+                                    <div class="product__rating-stars">
+                                        <svg
+                                            class="product__star"
+                                            width="18"
+                                            height="17"
+                                        >
+                                            <use
+                                                href="./icons/main-sprite.svg#star"
+                                            ></use>
+                                        </svg>
+                                        <svg
+                                            class="product__star"
+                                            width="18"
+                                            height="17"
+                                        >
+                                            <use
+                                                href="./icons/main-sprite.svg#star"
+                                            ></use>
+                                        </svg>
+                                        <svg
+                                            class="product__star"
+                                            width="18"
+                                            height="17"
+                                        >
+                                            <use
+                                                href="./icons/main-sprite.svg#star"
+                                            ></use>
+                                        </svg>
+                                        <svg
+                                            class="product__star"
+                                            width="18"
+                                            height="17"
+                                        >
+                                            <use
+                                                href="./icons/main-sprite.svg#star"
+                                            ></use>
+                                        </svg>
+                                        <svg
+                                            class="product__star-half article-star--half"
+                                            width="9"
+                                            height="17"
+                                        >
+                                            <use
+                                                href="./icons/main-sprite.svg#star-half"
+                                            ></use>
+                                        </svg>
+                                    </div>
+                                    <p class="product__rating-text">4.5/5</p>
+                                </div>
+                                <div class="product__price-wrapper">
+                                    <p class="product__price">₽6000</p>
+                                    <p class="product__old-price">₽8000</p>
+                                    <p class="product__price-discount">-30%</p>
+                                </div>
+                            </footer>
+                        </article>
+                    </div>
+                    <button class="products__button">Посмотреть всё</button>
+                </div>
+            </section>
+            <section class="products products--bestsellers">   
+                <div class="container products__container">
+                    <h2 class="products__title">ЛИДЕРЫ ПРОДАЖ</h2>
+                    <div class="product__grid">
+                        <article class="product__card">
+                            <picture>
+                                <source
+                                    srcset="
+                                        ./images/leaders-cards/leaders-image-1.webp
+                                    "
+                                    type="image/webp"
+                                />
+                                <img
+                                    class="product__image"
+                                    width="295"
+                                    height="298"
+                                    src="./images/leaders-cards/leaders-image-1.jpg"
+                                    alt="Рубашка в полоску, цвета хаки и белыми пуговицами"
+                                />
+                            </picture>
+                            <footer class="product__footer">
+                                <h3 class="product__title">
+                                    Рубашка в полоску
+                                </h3>
+                                <div class="product__rating">
+                                    <div class="product__rating-stars">
+                                        <svg
+                                            class="product__star"
+                                            width="18"
+                                            height="17"
+                                        >
+                                            <use
+                                                href="./icons/main-sprite.svg#star"
+                                            ></use>
+                                        </svg>
+                                        <svg
+                                            class="product__star"
+                                            width="18"
+                                            height="17"
+                                        >
+                                            <use
+                                                href="./icons/main-sprite.svg#star"
+                                            ></use>
+                                        </svg>
+                                        <svg
+                                            class="product__star"
+                                            width="18"
+                                            height="17"
+                                        >
+                                            <use
+                                                href="./icons/main-sprite.svg#star"
+                                            ></use>
+                                        </svg>
+                                        <svg
+                                            class="product__star"
+                                            width="18"
+                                            height="17"
+                                        >
+                                            <use
+                                                href="./icons/main-sprite.svg#star"
+                                            ></use>
+                                        </svg>
+                                        <svg
+                                            class="product__star"
+                                            width="18"
+                                            height="17"
+                                        >
+                                            <use
+                                                href="./icons/main-sprite.svg#star"
+                                            ></use>
+                                        </svg>
+                                    </div>
+                                    <p class="product__rating-text">5.0/5</p>
+                                </div>
+                                <div class="product__price-wrapper">
+                                    <p class="product__price">₽5000</p>
+                                    <p class="product__old-price">₽6000</p>
+                                    <p class="product__price-discount">-20%</p>
+                                </div>
+                            </footer>
+                        </article>
+                        <article class="product__card">
+                            <picture>
+                                <source
+                                    srcset="
+                                        ./images/leaders-cards/leaders-image-2.webp
+                                    "
+                                    type="image/webp"
+                                />
+                                <img
+                                    class="product__image"
+                                    width="295"
+                                    height="298"
+                                    src="./images/leaders-cards/leaders-image-2.jpg"
+                                    alt="Футболка с надписью «Courage», оранжевая"
+                                />
+                            </picture>
+                            <footer class="product__footer">
+                                <h3 class="product__title">
+                                    Футболка «Courage»
+                                </h3>
+                                <div class="product__rating">
+                                    <div class="product__rating-stars">
+                                        <svg
+                                            class="product__star"
+                                            width="18"
+                                            height="17"
+                                        >
+                                            <use
+                                                href="./icons/main-sprite.svg#star"
+                                            ></use>
+                                        </svg>
+                                        <svg
+                                            class="product__star"
+                                            width="18"
+                                            height="17"
+                                        >
+                                            <use
+                                                href="./icons/main-sprite.svg#star"
+                                            ></use>
+                                        </svg>
+                                        <svg
+                                            class="product__star"
+                                            width="18"
+                                            height="17"
+                                        >
+                                            <use
+                                                href="./icons/main-sprite.svg#star"
+                                            ></use>
+                                        </svg>
+                                        <svg
+                                            class="product__star"
+                                            width="18"
+                                            height="17"
+                                        >
+                                            <use
+                                                href="./icons/main-sprite.svg#star"
+                                            ></use>
+                                        </svg>
+                                    </div>
+                                    <p class="product__rating-text">4.0/5</p>
+                                </div>
+                                <div class="product__price-wrapper">
+                                    <p class="product__price">₽5000</p>
+                                </div>
+                            </footer>
+                        </article>
+                        <article class="product__card">
+                            <picture>
+                                <source
+                                    srcset="
+                                        ./images/leaders-cards/leaders-image-3.webp
+                                    "
+                                    type="image/webp"
+                                />
+                                <img
+                                    class="product__image"
+                                    width="295"
+                                    height="298"
+                                    src="./images/leaders-cards/leaders-image-3.jpg"
+                                    alt="Свободные бермуды, почти до колен рванные"
+                                />
+                            </picture>
+                            <footer class="product__footer">
+                                <h3 class="product__title">
+                                    Свободные бермуды
+                                </h3>
+                                <div class="product__rating">
+                                    <div class="product__rating-stars">
+                                        <svg
+                                            class="product__star"
+                                            width="18"
+                                            height="17"
+                                        >
+                                            <use
+                                                href="./icons/main-sprite.svg#star"
+                                            ></use>
+                                        </svg>
+                                        <svg
+                                            class="product__star"
+                                            width="18"
+                                            height="17"
+                                        >
+                                            <use
+                                                href="./icons/main-sprite.svg#star"
+                                            ></use>
+                                        </svg>
+                                        <svg
+                                            class="product__star"
+                                            width="18"
+                                            height="17"
+                                        >
+                                            <use
+                                                href="./icons/main-sprite.svg#star"
+                                            ></use>
+                                        </svg>
+                                        
+                                    </div>
+                                    <p class="product__rating-text">3.0/5</p>
+                                </div>
+                                <div class="product__price-wrapper">
+                                    <p class="product__price">₽4000</p>
+                                </div>
+                            </footer>
+                        </article>
+                        <article class="product__card">
+                            <picture>
+                                <source
+                                    srcset="
+                                        ./images/leaders-cards/leaders-image-4.webp
+                                    "
+                                    type="image/webp"
+                                />
+                                <img
+                                    class="product__image"
+                                    width="295"
+                                    height="298"
+                                    src="./images/leaders-cards/leaders-image-4.jpg"
+                                    alt="Потертые узкие джинсы, черного цвета"
+                                />
+                            </picture>
+                            <footer class="product__footer">
+                                <h3 class="product__title">
+                                    Потертые узкие джинсы
+                                </h3>
+                                <div class="product__rating">
+                                    <div class="product__rating-stars">
+                                        <svg
+                                            class="product__star"
+                                            width="18"
+                                            height="17"
+                                        >
+                                            <use
+                                                href="./icons/main-sprite.svg#star"
+                                            ></use>
+                                        </svg>
+                                        <svg
+                                            class="product__star"
+                                            width="18"
+                                            height="17"
+                                        >
+                                            <use
+                                                href="./icons/main-sprite.svg#star"
+                                            ></use>
+                                        </svg>
+                                        <svg
+                                            class="product__star"
+                                            width="18"
+                                            height="17"
+                                        >
+                                            <use
+                                                href="./icons/main-sprite.svg#star"
+                                            ></use>
+                                        </svg>
+                                        <svg
+                                            class="product__star"
+                                            width="18"
+                                            height="17"
+                                        >
+                                            <use
+                                                href="./icons/main-sprite.svg#star"
+                                            ></use>
+                                        </svg>
+                                        <svg
+                                            class="product__star-half article-star--half"
+                                            width="9"
+                                            height="17"
+                                        >
+                                            <use
+                                                href="./icons/main-sprite.svg#star-half"
+                                            ></use>
+                                        </svg>
+                                    </div>
+                                    <p class="product__rating-text">4.5/5</p>
+                                </div>
+                                <div class="product__price-wrapper">
+                                    <p class="product__price">₽7000</p>
+                                </div>
+                            </footer>
+                        </article>
+                    </div>
+                    <button class="products__button">Посмотреть всё</button>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>

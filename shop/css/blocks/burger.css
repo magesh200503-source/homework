@@ -1,0 +1,34 @@
+@media (width > 768px) {
+    .burger{
+        display: none;
+    }
+}
+
+@media (width <= 768px) {
+    .burger{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 24px;
+        height: 24px;
+        z-index: var(--layer-3);
+    }
+
+    .burger--open .burger__icon-cross{
+        display: block;
+    }
+    
+    .burger__icon-cross,
+    .burger--open .burger__icon-burger{
+        display: none;
+    }
+}
+
+
+
+
+.header__burger-icon,
+.header__burger-svg{
+    fill: var(--main-color);
+    color: var(--main-color);
+}
