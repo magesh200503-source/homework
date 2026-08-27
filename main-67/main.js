@@ -31,13 +31,14 @@ const completeTodoById = (todos, todoId) => {
         return null;
     }
     todo[todoKeys.isCompleted] = !todo[todoKeys.isCompleted];
-    console.log(todo);
+    return todo;
 };
 
 const deleteTodoById = (todos, todoId) => {
     const todoIndex = todos.findIndex((todo) => todo[todoKeys.id] === todoId);
-    if (todoIndex === -1) {
+    if (!todoIndex) {
         errTodoNotFound(todoId);
+        return todos
     } else {
         todos.splice(todoIndex, 1);
         return todos;
