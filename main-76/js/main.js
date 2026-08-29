@@ -52,16 +52,16 @@ const form = document.querySelector(".form");
 const input = document.querySelector(".input");
 const htmlTodos = document.querySelector(".todos");
 
-const htmlTodo = `
-<li class="todo">
-    <div class="todo-text">Задача 1</div>
-    <div class="todo-actions">
-        <button class="button-complete button">&#10004;</button>
-        <button class="button-delete button">&#10006;</button>
-    </div>
-</li>`;
+function createTodoElement(text) {
+    const htmlTodo = `
+    <li class="todo">
+        <div class="todo-text">${text}</div>
+        <div class="todo-actions">
+            <button class="button-complete button">&#10004;</button>
+            <button class="button-delete button">&#10006;</button>
+        </div>
+    </li>`;
 
-function createTodoElement() {
     htmlTodos.insertAdjacentHTML("beforeend", htmlTodo);
 }
 
@@ -69,6 +69,12 @@ form.addEventListener("submit", (event) => {
     event.preventDefault();
     createTodoElement();
 });
+
+function handleCreateTodo(todos, text) {
+    createTodo(todos,text);
+    createTodoElement(text)
+}
+
 // При помощи метода querySelector получаем элементы .form, .input и .todos
 // Создаем функцию createTodoElement(text), которая будет создавать todo в виде разметки
 // Создаем функцию handleCreateTodo(todos, text), которая будет вызывать createTodo и createTodoElement
