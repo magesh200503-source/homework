@@ -4,7 +4,7 @@ const person = {
     name: "magesh",
     age: 21,
     city: "Москва",
-    hobby: "Программирование"
+    hobby: "Программирование",
 };
 
 console.log(person);
@@ -13,9 +13,10 @@ console.log(person);
 // Создайте функцию isEmpty, которая проверяет является ли переданный объект пустым. Если объект пуст - верните true, в противном случае false.
 
 function isEmpty(obj) {
-    if (obj == 0) {
+    if (obj.keys(obj).length === 0) {
         return true
-    } else false
+    } else 
+        return false
 }
 
 // Задача 3.
@@ -29,11 +30,16 @@ let task = {
     isCompleted: false,
 }
 const cloneAndModify = (object, modifications) => ({ ...object, ...modifications});
-newTask = cloneAndModify(task, {isCompleted: true})
+const newTask = cloneAndModify(task, {isCompleted: true})
 for (let i in newTask) {
-    console.log(task[i])
+    console.log(newTask[i])
 }
 // Задача 4.
 // Создайте функцию callAllMethods, которая принимает объект и вызывает все его методы.
-
-// Без понятия как это можно сделать😐
+const callAllMetods = (obj) => {
+    for (let key in obj) {
+        if (typeof obj[key] === "function") { 
+            console.log(obj[key]); 
+        }
+    }
+}
