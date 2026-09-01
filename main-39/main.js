@@ -13,7 +13,7 @@ console.log(person);
 // Создайте функцию isEmpty, которая проверяет является ли переданный объект пустым. Если объект пуст - верните true, в противном случае false.
 
 function isEmpty(obj) {
-    if (obj.keys(obj).length === 0) {
+    if (Object.keys(obj).length === 0) {
         return true
     } else 
         return false
@@ -36,10 +36,10 @@ for (let i in newTask) {
 }
 // Задача 4.
 // Создайте функцию callAllMethods, которая принимает объект и вызывает все его методы.
-const callAllMetods = (obj) => {
+const callAllMethods = (obj) => {
     for (let key in obj) {
         if (typeof obj[key] === "function") { 
-            console.log(obj[key]); 
+            obj[key](); 
         }
     }
 }
