@@ -3,6 +3,7 @@
 @import url(base/fonts.css);
 @import url(base/vars.css);
 @import url(base/globals.css);
+@import url(base/other-hovers.css);
 
 /* blocks */
 @import url(blocks/header.css);
@@ -11,3 +12,7 @@
 @import url(blocks/burger.css);
 @import url(blocks/hero.css);
 @import url(blocks/products.css);
+@import url(blocks/styles.css);
+@import url(blocks/reviews.css);
+@import url(blocks/footer-newsletter.css);
+@import url(blocks/footer.css);

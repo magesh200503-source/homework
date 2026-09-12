@@ -9,7 +9,7 @@
 
 .header--fixed {
     -webkit-box-shadow: 0 0 20px 0 var(--discount-color);
-    box-shadow: 0 0 20px 0 var(--discount-color);
+    box-shadow: 0 0 20px 2px var(--discount-color);
     overflow-y: hidden;
 }
 
@@ -17,8 +17,8 @@
     font-family: var(--third-family);
     font-weight: 900;
     color: var(--main-color);
-    transform: translateY(-4px);
 }
+
 
 @media (width > 768px) {
     .header__logo-title {
@@ -181,4 +181,18 @@
 
 .header__actions-button {
     color: var(--main-color);
+}
+
+.header__actions-icon {
+    transition:
+        transform var(--transition-time),
+        box-shadow var(--transition-time);
+}
+
+@media (any-hover: hover) {
+    .header__actions-button:hover .header__actions-icon,
+    .header__actions-icon:focus-visible {
+        transform: scale(1.1);
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+    }
 }

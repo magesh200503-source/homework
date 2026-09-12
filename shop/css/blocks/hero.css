@@ -18,11 +18,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 60px;
 }
 
 @media (width <= 1240px) {
     .hero__container {
-        padding-top: 40px;
+        padding-top: 80px;
         flex-direction: column;
     }
 }
@@ -57,6 +58,11 @@
         text-align: center;
     }
 }
+@media (576px < width <= 1240px) {
+    .hero__title {
+        text-align: center;
+    }
+}
 
 @media (width <= 576px) {
     .hero__title {
@@ -65,9 +71,14 @@
     }
 }
 
-@media (width > 576px) {
+@media (576px < width <= 1240px) {
     .hero__text {
         text-align: center;
+        padding-bottom: 32px;
+    }
+}
+@media (width > 576px ) {
+    .hero__text {
         padding-bottom: 32px;
     }
 }
@@ -86,7 +97,20 @@
     color: var(--second-text-color);
     background-color: var(--main-color);
     margin-bottom: 48px;
+    transition:
+        transform var(--transition-time) ease,
+        box-shadow var(--transition-time) ease,
+        filter var(--transition-time) ease;
 }
+
+@media (any-hover: hover) {
+    .hero__button:hover, .hero__button:focus-visible {
+        box-shadow: 0 20px 25px #0000004d;
+        filter: brightness(1.1);
+        transform: scale(1.05) translateY(-10px);
+    }
+}
+
 
 @media (width <= 1240px) {
     .hero__button {
@@ -218,72 +242,71 @@
 }
 
 .hero__image {
-  display: block;
+    display: block;
 }
 
 @media (width <= 576px) {
     .hero__brands-container {
         padding-block: 36px;
     }
-    
 }
 
 @media (width > 576px) {
-  .hero__brand-logo--versace {
-    width: 167px;
-  }
+    .hero__brand-logo--versace {
+        width: 167px;
+    }
 }
 
 @media (width <= 576px) {
-  .hero__brand-logo--versace {
-    width: 116px;
-  }
+    .hero__brand-logo--versace {
+        width: 116px;
+    }
 }
 
 @media (width > 576px) {
-  .hero__brand-logo--zara {
-    width: 91px;
-  }
+    .hero__brand-logo--zara {
+        width: 91px;
+    }
 }
 
 @media (width <= 576px) {
-  .hero__brand-logo--zara {
-    width: 64px;
-  }
+    .hero__brand-logo--zara {
+        width: 64px;
+    }
 }
 
 @media (width > 576px) {
-  .hero__brand-logo--gucci {
-    width: 156px;
-  }
+    .hero__brand-logo--gucci {
+        width: 156px;
+    }
 }
 
 @media (width <= 576px) {
-  .hero__brand-logo--gucci {
-    width: 110px;
-  }
+    .hero__brand-logo--gucci {
+        width: 110px;
+    }
 }
 
 @media (width > 576px) {
-  .hero__brand-logo--prada {
-    width: 194px;
-  }
+    .hero__brand-logo--prada {
+        width: 194px;
+    }
 }
 
 @media (width <= 576px) {
-  .hero__brand-logo--prada {
-    width: 127px;
-  }
+    .hero__brand-logo--prada {
+        width: 127px;
+    }
 }
 
 @media (width > 576px) {
-  .hero__brand-logo--calvin {
-    width: 207px;
-  }
+    .hero__brand-logo--calvin {
+        width: 207px;
+    }
 }
 
 @media (width <= 576px) {
-  .hero__brand-logo--calvin {
-    width: 135px;
-  }
+    .hero__brand-logo--calvin {
+        width: 135px;
+    }
 }
